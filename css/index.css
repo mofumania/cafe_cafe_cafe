@@ -1,0 +1,370 @@
+﻿/* ▼#mainここから▼ */
+#main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.font {
+  font-family: "Ropa Sans", sans-serif;
+  font-size: 1.4rem;
+}
+/* ▼#sliderここから▼ */
+#slider {
+  position: relative;
+  max-width: 100%;
+  padding-top: 37.5%;
+  overflow: hidden;
+}
+
+#slider .slide-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  animation: slide 20s infinite;
+}
+
+#slider .slide-item01 {
+  background-image: url(../img/main_banner01.png);
+}
+
+#slider .slide-item02 {
+  background-image: url(../img/main_banner02.png);
+  animation-delay: 5s;
+}
+
+#slider .slide-item03 {
+  background-image: url(../img/main_banner03.png);
+  animation-delay: 10s;
+}
+
+#slider .slide-item04 {
+  background-image: url(../img/main_banner04.png);
+  animation-delay: 15s;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* ▲#sliderここまで▲ */
+
+/* ▼#containerここから▼ */
+#container {
+  display: flex;
+}
+
+.contents {
+  width: 530px;
+  margin: 50px 35px 0px 35px;
+}
+
+/* ▼#newsここから▼ */
+h2 {
+  border-bottom: 3px solid #9f5d19;
+  font-family: "senobi", sans-serif;
+  font-size: 20px;
+  padding: 4px 0px;
+}
+
+h2 .out_line {
+  background-color: #9f5d19;
+  padding: 12px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+h2 .in_line {
+  background-color: #9f5d19;
+  border-top: 3px solid #e7831c;
+  border-bottom: 3px solid #e7831c;
+  color: #fff;
+  padding: 4px 12px;
+}
+
+#news ul {
+  padding: 30px;
+  font-size: 18px;
+}
+
+#news li {
+  padding: 8px 0px 2px 0px;
+}
+
+#news li a:hover {
+  border-bottom: 2px dashed #e7831c;
+}
+
+#news dl {
+  display: flex;
+}
+
+#news dd {
+  text-indent: 1em;
+}
+/* ▼ボタンのデザインここから▼ */
+.btn {
+  font-size: 20px;
+}
+
+.btn a {
+  background: #e7831c;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 30px;
+  max-width: 220px;
+  padding: 10px 25px;
+  color: #fff;
+  font-family: "senobi", sans-serif;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.btn a:before {
+  content: "\f03a";
+  position: relative;
+  font-family: FontAwesome;
+  color: #fff;
+  font-weight: 900;
+  margin-right: 8px;
+}
+
+.btn a:hover {
+  background: #9f5d19;
+  color: #fff;
+}
+/* ▲ボタンのデザインここまで▲ */
+/* ▲#newsここまで▲ */
+
+/* ▼#pickupここから▼ */
+#pickup .item-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 20px;
+}
+
+#pickup .pickup_item {
+  width: 230px;
+}
+
+#pickup img {
+  width: 210px;
+  margin: 0px 10px;
+}
+
+#pickup img,
+#pickup dl {
+  margin: 0px 10px;
+}
+
+.hov_act:hover {
+  opacity: 0.6;
+  transition-duration: 0.2s;
+}
+
+#pickup dl {
+  padding: 20px 0px;
+}
+
+#pickup h3 {
+  font-size: 18px;
+  padding-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+#pickup h3 a:hover {
+  border-bottom: 2px dashed #e7831c;
+}
+
+#pickup .txt {
+  height: 100px;
+}
+
+#pickup .price {
+  padding-top: 10px;
+}
+/* ▲#pickupここまで▲ */
+/* ▲#containerここまで▲ */
+
+/* ▼#menuここから▼ */
+#menu {
+  width: 930px;
+  margin-bottom: 70px;
+}
+
+#menu .item-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+#menu .menu_item {
+  width: 216px;
+  padding: 30px 0px;
+}
+
+#menu .menu_item:nth-child(1) {
+  margin-left: 30px;
+}
+
+#menu .menu_item:nth-child(4) {
+  margin-right: 30px;
+}
+
+#menu .title {
+  height: 36px;
+  display: flex;
+}
+
+#menu .title .icon {
+  width: 30px;
+  height: 30px;
+}
+
+#menu h3 {
+  font-size: 20px;
+  text-indent: 0.3em;
+}
+
+#menu h3:hover {
+  border-bottom: 2px dashed #e7831c;
+}
+
+#menu .item img {
+  width: 200px;
+  margin: 14px 5px;
+}
+/* ▲#menuここまで▲ */
+/* ▲#mainここまで▲ */
+
+@media (max-width: 959px) {
+  /* ▼#mainここから▼ */
+  /* ▼#sliderここから▼ */
+  #slider {
+    padding-top: 50%;
+  }
+  #slider .slide-item01 {
+    background-image: url(../img/main_banner_sp01.png);
+  }
+
+  #slider .slide-item02 {
+    background-image: url(../img/main_banner_sp02.png);
+    animation-delay: 5s;
+  }
+
+  #slider .slide-item03 {
+    background-image: url(../img/main_banner_sp03.png);
+    animation-delay: 10s;
+  }
+
+  #slider .slide-item04 {
+    background-image: url(../img/main_banner_sp04.png);
+    animation-delay: 15s;
+  }
+  /* ▲#sliderここまで▲ */
+
+  /* ▼.contentsここから▼ */
+  /* ▼#newsここから▼ */
+  h2 {
+    padding: 6px 0px;
+  }
+
+  #news dd a,
+  #pickup h3 a,
+  #menu h3 a {
+    border-bottom: 1px solid #9f5d19;
+  }
+  /* ▼#containerここから▼ */
+  #container {
+    display: block;
+  }
+
+  .contents {
+    width: auto;
+    margin: 50px 20px;
+  }
+  /* ▼#newsここから▼ */
+  .btn a {
+    margin: 20px auto;
+  }
+  /* ▲#newsここまで▲ */
+
+  /* ▼#pickupここから▼ */
+  #pickup .pickup_item {
+    width: 48%;
+  }
+  #pickup .item-box {
+    margin: 30px;
+  }
+
+  #pickup img {
+    width: 100%;
+  }
+
+  #pickup h3 {
+    font-size: 1rem;
+  }
+
+  /* ▲#pickupここまで▲ */
+  /* ▲#containerここまで▲ */
+  /* ▼#menuここから▼ */
+  #menu {
+    width: auto;
+  }
+
+  #menu .item-box {
+    overflow: scroll;
+  }
+  /* ▲.contentsここまで▲ */
+  /* ▲#mainここまで▲ */
+}
+
+@media (max-width: 519px) {
+  /* ▼#mainここから▼ */
+  /* ▼.contentsここから▼ */
+  /* ▼#pickupここから▼ */
+  #pickup .pickup_item {
+    width: auto;
+  }
+  #pickup .item-box {
+    display: block;
+    margin: 30px;
+  }
+
+  #pickup h3 {
+    font-size: 18px;
+  }
+
+  #pickup .txt {
+    height: 70px;
+  }
+  /* ▲#pickupここまで▲ */
+  /* ▲.contentsここまで▲ */
+  /* ▼#menuここから▼ */
+  #menu .title .icon {
+    width: 26px;
+    height: 26px;
+  }
+  /* ▲#manuここまで▲ */
+  /* ▲#mainここまで▲ */
+}

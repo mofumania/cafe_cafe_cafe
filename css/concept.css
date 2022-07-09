@@ -1,0 +1,161 @@
+﻿/* ▼#mainここから▼ */
+#main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contents {
+  padding: 50px 30px;
+}
+/* ▼#conceptここから▼ */
+#concept {
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: "senobi-bold", sans-serif;
+  padding-bottom: 30px;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #e7831c;
+  margin: 10px auto 0px auto;
+}
+
+#concept .txt {
+  line-height: 3;
+}
+
+#concept .sp-only {
+  display: none;
+}
+
+.image {
+  height: 350px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(../img/SW078_L[1].jpg);
+  background-repeat: no-repeat;
+  background-position: center -250px;
+  background-size: cover;
+}
+
+/* ▼ボタンのデザインここから▼ */
+.btn {
+  font-size: 20px;
+  margin: 10px auto;
+}
+
+.btn a {
+  background: #e7831c;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  max-width: 220px;
+  padding: 10px 25px;
+  color: #fff;
+  font-family: "senobi-bold", sans-serif;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.btn a:hover {
+  background: #9f5d19;
+  color: #fff;
+}
+/* ▲ボタンのデザインここまで▲ */
+/* ▲#conceptここまで▲ */
+
+/* ▼#ownerここから▼ */
+#owner {
+  display: flex;
+  justify-content: center;
+}
+
+#owner img {
+  width: 180px;
+}
+
+#owner ul {
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+#owner li:nth-child(1) {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+#owner dl {
+  display: flex;
+}
+
+#owner dt {
+  width: 50px;
+}
+
+#owner dd {
+  text-indent: 1em;
+}
+/* ▲#ownerここまで▲ */
+/* ▲#mainここまで▲ */
+@media (max-width: 959px) {
+  /* ▼#mainここから▼ */
+  /* ▲#mainここまで▲ */
+}
+
+@media (max-width: 519px) {
+  /* ▼#mainここから▼ */
+  /* ▼#conceptここから▼ */
+  #concept .sp-only {
+    display: inline;
+  }
+
+  #concept .pc-only {
+    display: none;
+  }
+
+  .image {
+    height: 150px;
+    background-position: center -90px;
+    background-size: cover;
+  }
+  /* ▲#conceptここまで▲ */
+
+  /* ▼#ownerここから▼ */
+  #owner {
+    display: block;
+  }
+
+  #owner img {
+    display: block;
+    margin: 0 auto;
+  }
+  #owner ul {
+    margin-left: 0px;
+    width: 180px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  #owner li:nth-child(1) {
+    text-align: center;
+  }
+
+  #owner dt {
+    width: 80px;
+    text-align: right;
+  }
+  /* ▲#ownerここまで▲ */
+  /* ▲#mainここまで▲ */
+}
